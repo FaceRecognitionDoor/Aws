@@ -27,4 +27,11 @@ public class LoginController
         return "login/main";
     }
 
+    @RequestMapping("myInfo")
+    public String myInfo(Model model, @RequestParam("id") int id)
+    {
+        model.addAttribute("member",managerRepository.findById(id));
+        return "login/myInfo";
+    }
+
 }

@@ -14,111 +14,59 @@
                 <div class="col-md-6">
                     <div class="card ">
                         <div class="header">
-                            <h4 class="title">최신 공지사항</h4>
-                            <p class="category">관심있는 공지사항을 체크해 주세요</p>
+                            <h4 class="title">나의 출입 기록</h4>
+                            <p class="category">나의 출입 기록을 삭제 할 수 도 있습니다.</p>
                         </div>
                         <div class="content">
                             <div class="table-full-width">
                                 <table class="table">
                                     <tbody>
                                     <tr>
-                                        <td>
-                                            <div class="checkbox">
-                                                <input id="checkbox1" type="checkbox">
-                                                <label for="checkbox1"></label>
-                                            </div>
-                                        </td>
-                                        <td>[IT학부] SM 사업 공지(1학년 멘티 모집)</td>
+                                        <td>11월 5일 15:00에 출입하였습니다.</td>
                                         <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                <i class="fa fa-edit"></i>
-                                            </button>
                                             <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
                                                 <i class="fa fa-times"></i>
                                             </button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            <div class="checkbox">
-                                                <input id="checkbox2" type="checkbox" checked>
-                                                <label for="checkbox2"></label>
-                                            </div>
-                                        </td>
-                                        <td>[영어스피치대회] 제24회 English Speec...</td>
+                                        <td>11월 5일  9:00에 출입하였습니다.</td>
                                         <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                <i class="fa fa-edit"></i>
-                                            </button>
                                             <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
                                                 <i class="fa fa-times"></i>
                                             </button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            <div class="checkbox">
-                                                <input id="checkbox3" type="checkbox">
-                                                <label for="checkbox3"></label>
-                                            </div>
-                                        </td>
-                                        <td>[중앙도서관] 10/4(목). 연극 '쥐덫' 보러 ...
+                                        <td>11월 4일 13:00에 출입하였습니다.
                                         </td>
                                         <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                <i class="fa fa-edit"></i>
-                                            </button>
                                             <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
                                                 <i class="fa fa-times"></i>
                                             </button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            <div class="checkbox">
-                                                <input id="checkbox4" type="checkbox" checked>
-                                                <label for="checkbox4"></label>
-                                            </div>
                                         </td>
-                                        <td>[구로마을대학] 공정무역 교육 및 캠페인전문가 양성...</td>
+                                        <td>11월 3일 19:00에 출입하였습니다.</td>
                                         <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                <i class="fa fa-edit"></i>
-                                            </button>
                                             <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
                                                 <i class="fa fa-times"></i>
                                             </button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            <div class="checkbox">
-                                                <input id="checkbox5" type="checkbox">
-                                                <label for="checkbox5"></label>
-                                            </div>
                                         </td>
-                                        <td>[IT학부] SM 사업 공지</td>
+                                        <td>11월 2일 16:00에 출입하였습니다.</td>
                                         <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                <i class="fa fa-edit"></i>
-                                            </button>
                                             <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
                                                 <i class="fa fa-times"></i>
                                             </button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            <div class="checkbox">
-                                                <input id="checkbox6" type="checkbox" checked>
-                                                <label for="checkbox6"></label>
-                                            </div>
-                                        </td>
-                                        <td>[중앙도서관] 9/11-10/7. 이용자 만족도 조...</td>
+                                        <td>11월 2일에 13:00에 출입하였습니다.</td>
                                         <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                <i class="fa fa-edit"></i>
-                                            </button>
                                             <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
                                                 <i class="fa fa-times"></i>
                                             </button>
@@ -131,7 +79,7 @@
                             <div class="footer">
                                 <hr>
                                 <div class="stats">
-                                    <i class="fa fa-history"></i> 17분 전에 글을 올렸습니다.
+                                    <i class="fa fa-history"></i> 5시간 전에 새로운 출입기록이 있습니다.
                                 </div>
                             </div>
                         </div>
@@ -141,116 +89,80 @@
                 <div class="col-md-6">
                     <div class="card ">
                         <div class="header">
-                            <h4 class="title">최신  Q&A</h4>
-                            <p class="category">이미 답변한 질문에 체크해주세요</p>
+                            <h4 class="title">출입 오류 기록</h4>
+                            <p class="category">출입 오류 횟수 기록</p>
                         </div>
                         <div class="content">
                             <div class="table-full-width">
                                 <table class="table">
                                     <tbody>
                                     <tr>
-                                        <td>
-                                            <div class="checkbox">
-                                                <input id="checkbox1" type="checkbox">
-                                                <label for="checkbox1"></label>
-                                            </div>
-                                        </td>
-                                        <td>디지털 컨텐츠 학과 수업 '디지털 음악 II'에 관...</td>
+                                        <td>11월 5일 14:30에 2회 오류</td>
                                         <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                <i class="fa fa-edit"></i>
-                                            </button>
                                             <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
                                                 <i class="fa fa-times"></i>
                                             </button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            <div class="checkbox">
-                                                <input id="checkbox2" type="checkbox" checked>
-                                                <label for="checkbox2"></label>
-                                            </div>
-                                        </td>
-                                        <td>4학기 수료자가 추가학점이수가 가능한지요?</td>
+                                        <td>11월 5일 8:30에 1회 오류</td>
                                         <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                <i class="fa fa-edit"></i>
-                                            </button>
                                             <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
                                                 <i class="fa fa-times"></i>
                                             </button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            <div class="checkbox">
-                                                <input id="checkbox3" type="checkbox">
-                                                <label for="checkbox3"></label>
-                                            </div>
-                                        </td>
-                                        <td>통계 프로그램 사용 관련
+                                        <td>11월 3일 13:00에 3회 오류
                                         </td>
                                         <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                <i class="fa fa-edit"></i>
-                                            </button>
                                             <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
                                                 <i class="fa fa-times"></i>
                                             </button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            <div class="checkbox">
-                                                <input id="checkbox4" type="checkbox" checked>
-                                                <label for="checkbox4"></label>
-                                            </div>
-                                        </td>
-                                        <td>통계 프로그램 구입 요청 件</td>
+                                        <td>11월 2일 14:00에 1회 오류</td>
                                         <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                <i class="fa fa-edit"></i>
-                                            </button>
                                             <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
                                                 <i class="fa fa-times"></i>
                                             </button>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            <div class="checkbox">
-                                                <input id="checkbox5" type="checkbox">
-                                                <label for="checkbox5"></label>
-                                            </div>
-                                        </td>
-                                        <td>학번 조회 및 오티일정</td>
-                                        <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                <i class="fa fa-edit"></i>
-                                            </button>
-                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                <i class="fa fa-times"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="checkbox">
-                                                <input id="checkbox6" type="checkbox" checked>
-                                                <label for="checkbox6"></label>
-                                            </div>
-                                        </td>
-                                        <td>종합시험을 토요일에 볼 수 있도록 해주십시오</td>
-                                        <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                <i class="fa fa-edit"></i>
-                                            </button>
-                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                <i class="fa fa-times"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
+                                        <!--                                           <td>
+                                                                                      <div class="checkbox">
+                                                                                              <input id="checkbox5" type="checkbox">
+                                                                                              <label for="checkbox5"></label>
+                                                                                          </div>
+                                                                                  </td>
+                                                                                  <td>학번 조회 및 오티일정</td>
+                                                                                  <td class="td-actions text-right">
+                                                                                      <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
+                                                                                          <i class="fa fa-edit"></i>
+                                                                                      </button>
+                                                                                      <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                                                                                          <i class="fa fa-times"></i>
+                                                                                      </button>
+                                                                                  </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                  <td>
+                                                                                      <div class="checkbox">
+                                                                                              <input id="checkbox6" type="checkbox" checked>
+                                                                                              <label for="checkbox6"></label>
+                                                                                          </div>
+                                                                                  </td>
+                                                                                  <td>종합시험을 토요일에 볼 수 있도록 해주십시오</td>
+                                                                                  <td class="td-actions text-right">
+                                                                                      <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
+                                                                                          <i class="fa fa-edit"></i>
+                                                                                      </button>
+                                                                                      <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                                                                                          <i class="fa fa-times"></i>
+                                                                                      </button>
+                                                                                  </td>
+                                                                              </tr> -->
                                     </tbody>
                                 </table>
                             </div>
@@ -258,7 +170,7 @@
                             <div class="footer">
                                 <hr>
                                 <div class="stats">
-                                    <i class="fa fa-history"></i> 3분전에 질문이 올라왔습니다.
+                                    <i class="fa fa-history"></i> 5시간에 2회 출입 오류 발생
                                 </div>
                             </div>
                         </div>
@@ -276,7 +188,7 @@
     <footer class="footer">
         <div class="container-fluid">
             <p class="copyright pull-right">
-                &copy; <script>document.write(new Date().getFullYear())</script> <a href="${R}http://www.creative-tim.com">Creative Tim</a>, made with love for a better web
+                얼굴 인식 페이지
             </p>
         </div>
     </footer>
