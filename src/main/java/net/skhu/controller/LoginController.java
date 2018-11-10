@@ -1,5 +1,6 @@
 package net.skhu.controller;
 
+import net.skhu.domain.Manager;
 import net.skhu.repository.ManagerRepository;
 import net.skhu.repository.PictureRepository;
 import org.slf4j.LoggerFactory;
@@ -9,12 +10,14 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
 @RequestMapping("/login")
 public class LoginController
 {
     private static org.slf4j.Logger logger = LoggerFactory.getLogger(LoginController.class);
+
     @Autowired
     ManagerRepository managerRepository;
     @Autowired
@@ -32,6 +35,14 @@ public class LoginController
     {
         model.addAttribute("member",managerRepository.findById(id));
         return "login/myInfo";
+    }
+
+    @RequestMapping("update")
+    public String update(Manager manager, RedirectAttributes redirectAttributes)
+    {
+        managerRepository.save(manager);
+        redirectAttributes.addAttribute("id",manager.getId());
+        return "redirect:myInfo";
     }
 
 }

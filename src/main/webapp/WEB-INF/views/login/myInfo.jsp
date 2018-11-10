@@ -16,7 +16,8 @@
                             <h4 class="title">내정보</h4>
                         </div>
                         <div class="content">
-                            <form action="">
+
+                            <form action="update">
                                 <div class="row">
                                     <div class="col-md-5">
                                         <div class="form-group">
@@ -58,7 +59,7 @@
                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <label>주소</label>
-                                            <input type="text" class="form-control" placeholder="Home Address" value="${member.address}">
+                                            <input type="text" class="form-control" name="address"  value="${member.address}">
                                         </div>
                                     </div>
                                 </div>
@@ -67,14 +68,14 @@
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label>전화번호</label>
-                                            <input type="text" class="form-control" placeholder="Country" name="phone" value="${member.phone}">
+                                            <input type="text" class="form-control" name="phone" value="${member.phone}">
                                         </div>
                                     </div>
 
                                     <div class="col-md-4">
                                             <div class="form-group">
                                                 <label>경력사항</label>
-                                                <input type="number" class="form-control" placeholder="${member.career}">
+                                                <input type="text" class="form-control" name="career" value="${member.career}">
                                             </div>
                                     </div>
 
@@ -84,7 +85,7 @@
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label>About Me</label>
-                                                <textarea rows="5" class="form-control" placeholder="Here can be your description" value="Mike">${member.comment}</textarea>
+                                                <textarea rows="5" class="form-control" name="comment">${member.comment}</textarea>
                                             </div>
                                         </div>
                                 </div>
