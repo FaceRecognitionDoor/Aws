@@ -35,9 +35,9 @@
 
 
                     <div class="logo">
-                    <a href="" class="simple-text">
-                    얼굴 인식
-                    </a>
+                        <a href="" class="simple-text">
+                            얼굴 인식
+                        </a>
                     </div>
 
                     <ul class="nav">
@@ -51,14 +51,14 @@
 
                     <li>
                         <a href="myInfo?id=${member.id}">
-                                <i class="pe-7s-notebook"></i>
-                                <p>등록된 사진 목록</p>
+                                <i class="pe-7s-user"></i>
+                                <p>관리자 정보</p>
                         </a>
                     </li>
 
                     <li>
                         <a href="register.html">
-                                <i class="pe-7s-notebook"></i>
+                                <i class="pe-7s-id"></i>
                                 <p>등록된 사진 목록</p>
                         </a>
                     </li>
