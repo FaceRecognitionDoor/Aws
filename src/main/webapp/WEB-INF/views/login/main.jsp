@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Skhu졸업요건</title>
+    <title>얼굴 인식</title>
 </head>
 
 <body>
