@@ -58,6 +58,12 @@
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
         </dependency>
+        <!--AWS 서비스를 위한 java API제공-->
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk</artifactId>
+            <version>1.11.106</version>
+        </dependency>
     </dependencies>
 
     <build>

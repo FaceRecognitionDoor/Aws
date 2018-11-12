@@ -1,6 +1,6 @@
 package net.skhu.validation;
 
-public class DepartmentValidation
+public class AmazonS3Util
 {
 
 }
