@@ -57,14 +57,14 @@
                     </li>
 
                     <li>
-                        <a href="register.html">
+                        <a href="register.jsp">
                                 <i class="pe-7s-id"></i>
                                 <p>등록된 사진 목록</p>
                         </a>
                     </li>
 
                     <li>
-                        <a href="exceed.html">
+                    <a href="exceed?id=${member.id}">
                                 <i class="pe-7s-note2"></i>
                                 <p>3회 이상 초과 사진 목록</p>
                         </a>

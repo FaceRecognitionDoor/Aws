@@ -47,7 +47,7 @@
                                         <td>2018.11.05</td>
                                         <td>13:00</td>
                                         <td>3회</td>
-                                        <td><a href="showPic.html"><button class="btn btn-primary">사진 확인</button>
+                                        <td><a href="showPic.jsp"><button class="btn btn-primary">사진 확인</button>
                                             <button class="btn btn-danger">삭제</button></td>
                                     </tr>
                                     <tr>

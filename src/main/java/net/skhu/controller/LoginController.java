@@ -37,6 +37,13 @@ public class LoginController
         return "login/myInfo";
     }
 
+    @RequestMapping("exceed")
+    public String exceed(Model model, @RequestParam("id") int id)
+    {
+        model.addAttribute("member",managerRepository.findById(id));
+        return "login/exceed";
+    }
+
     @RequestMapping("update")
     public String update(Manager manager, RedirectAttributes redirectAttributes)
     {
