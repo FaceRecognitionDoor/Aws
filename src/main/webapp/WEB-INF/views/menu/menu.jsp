@@ -70,6 +70,13 @@
                         </a>
                     </li>
 
+                     <li>
+                        <a href="test?id=${member.id}">
+                                <i class="pe-7s-note2"></i>
+                                <p>test</p>
+                        </a>
+                     </li>
+
                     </ul>
                     </div>
                     </div>

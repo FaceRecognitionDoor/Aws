@@ -25,3 +25,5 @@
 /.nb-gradle/
 application.properties
 src/main/java/net/skhu/validation/AmazonS3Util.java
+src/main/java/net/skhu/validation/S3Util.java
+src/main/java/net/skhu/validation/UploadFileUtils.java

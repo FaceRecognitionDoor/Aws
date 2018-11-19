@@ -105,7 +105,7 @@
                             <div class="author">
                                 <a href="#">
                                     <i class="pe-7s-smile" style="size:128px"></i>
-
+                                        ${test}
                                     </h4>
                                 </a>
                             </div>

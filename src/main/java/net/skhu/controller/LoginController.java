@@ -3,6 +3,8 @@ package net.skhu.controller;
 import net.skhu.domain.Manager;
 import net.skhu.repository.ManagerRepository;
 import net.skhu.repository.PictureRepository;
+import net.skhu.validation.AmazonS3Util;
+import net.skhu.validation.S3Util;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -22,6 +24,10 @@ public class LoginController
     ManagerRepository managerRepository;
     @Autowired
     PictureRepository pictureRepository;
+    @Autowired
+    AmazonS3Util amazonS3Util;
+    @Autowired
+    S3Util s3Util;
 
     @RequestMapping(value = "main",method = RequestMethod.POST)
     public String main(Model model, @RequestParam("id") int id, @RequestParam("password") String password)
@@ -33,6 +39,7 @@ public class LoginController
     @RequestMapping("myInfo")
     public String myInfo(Model model, @RequestParam("id") int id)
     {
+
         model.addAttribute("member",managerRepository.findById(id));
         return "login/myInfo";
     }
@@ -43,6 +50,14 @@ public class LoginController
         managerRepository.save(manager);
         redirectAttributes.addAttribute("id",manager.getId());
         return "redirect:myInfo";
+    }
+
+    @RequestMapping("test")
+    public String test(Model model, @RequestParam("id") int id)
+    {
+        model.addAttribute("member",managerRepository.findById(id));
+        model.addAttribute("test",amazonS3Util.test());
+        return "login/test";
     }
 
 }
