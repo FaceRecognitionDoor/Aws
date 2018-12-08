@@ -29,7 +29,7 @@ public class LoginController
     @Autowired
     S3Util s3Util;
 
-    @RequestMapping(value = "main",method = RequestMethod.POST)
+    @RequestMapping(value = "main" , method = RequestMethod.POST)
     public String main(Model model, @RequestParam("id") int id, @RequestParam("password") String password)
     {
         model.addAttribute("member",managerRepository.findByIdAndPassword(id,password));

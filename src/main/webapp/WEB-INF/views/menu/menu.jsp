@@ -107,7 +107,7 @@
 
                     <ul class="nav navbar-nav navbar-right">
                             <li>
-                            <a href="../login.jsp">
+                            <a href="../index.jsp">
                             <p>Log out</p>
                             </a>
                             </li>

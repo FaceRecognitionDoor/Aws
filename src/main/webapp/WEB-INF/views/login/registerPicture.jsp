@@ -6,7 +6,7 @@
 <body>
     <div class="wrapper">
         <%@include file="../menu/menu.jsp"%>
-        
+
     </div>
 </body>
 </html>
