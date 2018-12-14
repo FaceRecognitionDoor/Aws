@@ -76,7 +76,6 @@ public class LoginController
     {
         model.addAttribute("member",managerRepository.findById(id));
         model.addAttribute("file",amazonS3Util.fileAsk());
-//        model.addAttribute("time",amazonS3Util.timeAsk());
         return "login/registerPicture";
     }
 

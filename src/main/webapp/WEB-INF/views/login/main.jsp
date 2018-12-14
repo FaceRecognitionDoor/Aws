@@ -21,7 +21,7 @@
                             <div class="table-full-width">
                                 <table class="table">
                                     <tbody>
-                                    <c:forEach var="timezone" items="${time}"  begin="1" end="7">
+                                    <c:forEach var="timezone" items="${time}"  begin="0" end="6">
                                     <tr>
                                         <td>${timezone}에 등록되었습니다</td>
                                         <td class="td-actions text-right">
@@ -49,7 +49,7 @@
                             <div class="table-full-width">
                                 <table class="table">
                                     <tbody>
-                                    <c:forEach var="err" items="${error}" begin="1" end="7">
+                                    <c:forEach var="err" items="${error}" begin="0" end="6">
                                     <tr>
                                         <td>${err}에 출입 오류 났습니다</td>
                                         <td class="td-actions text-right">

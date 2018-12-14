@@ -33,14 +33,16 @@
                                     <tr>
                                         <th>번호</th>
                                         <th>제목</th>
+                                        <th>시간</th>
                                     </tr>
                                     </thead>
 
                                     <tbody>
                                     <c:forEach var="tes" items="${file}"  varStatus="status">
-                                        <tr data-url="onePicture?id=${member.id}&tes=${tes}">
+                                        <tr data-url="onePicture?id=${member.id}&tes=${tes.title}">
                                             <td>${status.index+1}</td>
-                                            <td>${tes.replace(".png","")}</td>
+                                            <td>${tes.title.replace(".png","")}</td>
+                                            <td>${tes.dates}</td>
                                         </tr>
                                     </c:forEach>
                                     </tbody>
