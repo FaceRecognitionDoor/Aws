@@ -29,6 +29,7 @@
 
                     </head>
 
+
                     <div class="sidebar" data-color="azure" data-image="${R}assets/img/logo.jpg">
                     <div class="sidebar-wrapper">
 
@@ -43,7 +44,7 @@
                     <ul class="nav">
 
                     <li class="active">
-                        <a href="">
+                        <a href="/login/main?id=${member.id}">
                                 <i class="pe-7s-graph"></i>
                                 <p>메인 페이지</p>
                         </a>
@@ -57,23 +58,17 @@
                     </li>
 
                     <li>
-                        <a href="register.html">
+                        <a href="registerPicture?id=${member.id}">
                                 <i class="pe-7s-id"></i>
                                 <p>등록된 사진 목록</p>
                         </a>
                     </li>
 
-                    <li>
-                        <a href="exceed.html">
-                                <i class="pe-7s-note2"></i>
-                                <p>3회 이상 초과 사진 목록</p>
-                        </a>
-                    </li>
 
                      <li>
-                        <a href="test?id=${member.id}">
+                        <a href="resisterError?id=${member.id}">
                                 <i class="pe-7s-note2"></i>
-                                <p>test</p>
+                                <p>출입 에러 목록</p>
                         </a>
                      </li>
 

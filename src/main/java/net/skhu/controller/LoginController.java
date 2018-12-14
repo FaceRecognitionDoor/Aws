@@ -29,10 +29,21 @@ public class LoginController
     @Autowired
     S3Util s3Util;
 
+    @RequestMapping(value = "main",method = RequestMethod.GET)
+    public String mainGet(Model model, @RequestParam("id") int id)
+    {
+        model.addAttribute("member",managerRepository.findById(id));
+        model.addAttribute("time",amazonS3Util.timeAsk());
+        model.addAttribute("error",amazonS3Util.errorAsk());
+        return "login/main";
+    }
+
     @RequestMapping(value = "main" , method = RequestMethod.POST)
-    public String main(Model model, @RequestParam("id") int id, @RequestParam("password") String password)
+    public String main(Model model, @RequestParam("id") int id, @RequestParam(value = "password") String password)
     {
         model.addAttribute("member",managerRepository.findByIdAndPassword(id,password));
+        model.addAttribute("time",amazonS3Util.timeAsk());
+        model.addAttribute("error",amazonS3Util.errorAsk());
         return "login/main";
     }
 
@@ -52,12 +63,28 @@ public class LoginController
         return "redirect:myInfo";
     }
 
-    @RequestMapping("test")
+    @RequestMapping("resisterError")
     public String test(Model model, @RequestParam("id") int id)
     {
         model.addAttribute("member",managerRepository.findById(id));
-        model.addAttribute("test",amazonS3Util.test());
-        return "login/test";
+        model.addAttribute("error",amazonS3Util.errorFileAsk());
+        return "login/resisterError";
     }
 
+    @RequestMapping("registerPicture")
+    public String register(Model model,@RequestParam("id") int id)
+    {
+        model.addAttribute("member",managerRepository.findById(id));
+        model.addAttribute("file",amazonS3Util.fileAsk());
+//        model.addAttribute("time",amazonS3Util.timeAsk());
+        return "login/registerPicture";
+    }
+
+    @RequestMapping("onePicture")
+    public String picture(Model model, @RequestParam("id") int id, @RequestParam("tes") String tes)
+    {
+        model.addAttribute("member",managerRepository.findById(id));
+        model.addAttribute("tes",tes);
+        return "login/onePicture";
+    }
 }

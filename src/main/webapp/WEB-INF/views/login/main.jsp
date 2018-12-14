@@ -14,74 +14,27 @@
                 <div class="col-md-6">
                     <div class="card ">
                         <div class="header">
-                            <h4 class="title">나의 출입 기록</h4>
-                            <p class="category">나의 출입 기록을 삭제 할 수 도 있습니다.</p>
+                            <h4 class="title">얼굴 인식 등록 시간</h4>
+                            <p class="category">최근 얼굴 기록 7개</p>
                         </div>
                         <div class="content">
                             <div class="table-full-width">
                                 <table class="table">
                                     <tbody>
+                                    <c:forEach var="timezone" items="${time}"  begin="1" end="7">
                                     <tr>
-                                        <td>11월 5일 15:00에 출입하였습니다.</td>
+                                        <td>${timezone}에 등록되었습니다</td>
                                         <td class="td-actions text-right">
                                             <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
                                                 <i class="fa fa-times"></i>
                                             </button>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td>11월 5일  9:00에 출입하였습니다.</td>
-                                        <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                <i class="fa fa-times"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>11월 4일 13:00에 출입하였습니다.
-                                        </td>
-                                        <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                <i class="fa fa-times"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        </td>
-                                        <td>11월 3일 19:00에 출입하였습니다.</td>
-                                        <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                <i class="fa fa-times"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        </td>
-                                        <td>11월 2일 16:00에 출입하였습니다.</td>
-                                        <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                <i class="fa fa-times"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>11월 2일에 13:00에 출입하였습니다.</td>
-                                        <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                <i class="fa fa-times"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
+                                    </c:forEach>
                                     </tbody>
                                 </table>
                             </div>
 
-                            <div class="footer">
-                                <hr>
-                                <div class="stats">
-                                    <i class="fa fa-history"></i> 5시간 전에 새로운 출입기록이 있습니다.
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -90,89 +43,27 @@
                     <div class="card ">
                         <div class="header">
                             <h4 class="title">출입 오류 기록</h4>
-                            <p class="category">출입 오류 횟수 기록</p>
+                            <p class="category">최근 출입 오류 7개 기록</p>
                         </div>
                         <div class="content">
                             <div class="table-full-width">
                                 <table class="table">
                                     <tbody>
+                                    <c:forEach var="err" items="${error}" begin="1" end="7">
                                     <tr>
-                                        <td>11월 5일 14:30에 2회 오류</td>
+                                        <td>${err}에 출입 오류 났습니다</td>
                                         <td class="td-actions text-right">
                                             <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
                                                 <i class="fa fa-times"></i>
                                             </button>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td>11월 5일 8:30에 1회 오류</td>
-                                        <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                <i class="fa fa-times"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>11월 3일 13:00에 3회 오류
-                                        </td>
-                                        <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                <i class="fa fa-times"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>11월 2일 14:00에 1회 오류</td>
-                                        <td class="td-actions text-right">
-                                            <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                <i class="fa fa-times"></i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <!--                                           <td>
-                                                                                      <div class="checkbox">
-                                                                                              <input id="checkbox5" type="checkbox">
-                                                                                              <label for="checkbox5"></label>
-                                                                                          </div>
-                                                                                  </td>
-                                                                                  <td>학번 조회 및 오티일정</td>
-                                                                                  <td class="td-actions text-right">
-                                                                                      <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                                                          <i class="fa fa-edit"></i>
-                                                                                      </button>
-                                                                                      <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                                                          <i class="fa fa-times"></i>
-                                                                                      </button>
-                                                                                  </td>
-                                                                              </tr>
-                                                                              <tr>
-                                                                                  <td>
-                                                                                      <div class="checkbox">
-                                                                                              <input id="checkbox6" type="checkbox" checked>
-                                                                                              <label for="checkbox6"></label>
-                                                                                          </div>
-                                                                                  </td>
-                                                                                  <td>종합시험을 토요일에 볼 수 있도록 해주십시오</td>
-                                                                                  <td class="td-actions text-right">
-                                                                                      <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
-                                                                                          <i class="fa fa-edit"></i>
-                                                                                      </button>
-                                                                                      <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                                                          <i class="fa fa-times"></i>
-                                                                                      </button>
-                                                                                  </td>
-                                                                              </tr> -->
+                                    </c:forEach>
+
                                     </tbody>
                                 </table>
                             </div>
 
-                            <div class="footer">
-                                <hr>
-                                <div class="stats">
-                                    <i class="fa fa-history"></i> 5시간에 2회 출입 오류 발생
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
