@@ -44,21 +44,21 @@
                     <ul class="nav">
 
                     <li class="active">
-                        <a href="/login/main?id=${member.id}">
+                        <a href="/login?id=${member.id}">
                                 <i class="pe-7s-graph"></i>
                                 <p>메인 페이지</p>
                         </a>
                     </li>
 
                     <li>
-                        <a href="myInfo?id=${member.id}">
+                        <a href="/login/myInfo?id=${member.id}">
                                 <i class="pe-7s-user"></i>
                                 <p>관리자 정보</p>
                         </a>
                     </li>
 
                     <li>
-                        <a href="registerPicture?id=${member.id}">
+                        <a href="/login/registerPicture?id=${member.id}">
                                 <i class="pe-7s-id"></i>
                                 <p>등록된 사진 목록</p>
                         </a>
@@ -66,7 +66,7 @@
 
 
                      <li>
-                        <a href="resisterError?id=${member.id}">
+                        <a href="/login/resisterError?id=${member.id}">
                                 <i class="pe-7s-note2"></i>
                                 <p>출입 에러 목록</p>
                         </a>

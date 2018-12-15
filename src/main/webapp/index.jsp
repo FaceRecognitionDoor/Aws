@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:url var="R" value="/" />
 <html>
 <head>
@@ -70,10 +71,15 @@
 
 <div class="login">
     <h1>얼굴 인식</h1>
-    <form action="login/main" method="post">
+    <form action="login" method="post">
         <input type="text" name="id"/>
         <input type="password" name="password" />
         <button type="submit" class="btn btn-primary btn-block btn-large">로그인</button>
+        <div>
+            <c:if test="${ err != null }">
+                <div style="color: #bb0502 ">아이디 or 비밀번호를 잘못 입력하셧습니다</div>
+            </c:if>
+        </div>
     </form>
 </div>
 
